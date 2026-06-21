@@ -26,7 +26,7 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           
-          <div className="animate-in fade-in zoom-in duration-500 flex justify-center mb-8">
+          <div className="flex justify-center mb-8">
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-primary via-blue-500 to-purple-500">
               <div className="w-full h-full rounded-full bg-background overflow-hidden border-4 border-background flex items-center justify-center relative">
                  <Image src="/Passport_Photo.jpg" alt="Naman Goyal" fill className="object-cover object-top" priority />
@@ -34,7 +34,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
+          <div className="">
             <h2 className="text-xl md:text-2xl font-medium text-primary mb-4 tracking-wide font-outfit">
               Hi, I'm Naman Goyal 👋
             </h2>
@@ -50,7 +50,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link href="#contact" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto text-base h-12 px-8">
                 Contact Me
@@ -59,7 +59,7 @@ export function Hero() {
           </div>
 
           {/* Metrics section */}
-          <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 fill-mode-both grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-16 border-t border-border mt-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-16 border-t border-border mt-16">
             {metrics.map((metric, idx) => (
               <div key={idx} className="flex flex-col items-center justify-center p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-md transition-shadow h-full min-h-[160px] gap-3">
                 <div className="p-3 rounded-full bg-primary/10">
