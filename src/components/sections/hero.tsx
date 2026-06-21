@@ -26,24 +26,15 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex justify-center mb-8"
-          >
+          <div className="animate-in fade-in zoom-in duration-500 flex justify-center mb-8">
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-gradient-to-tr from-primary via-blue-500 to-purple-500">
               <div className="w-full h-full rounded-full bg-background overflow-hidden border-4 border-background flex items-center justify-center relative">
                  <Image src="/Passport_Photo.jpg" alt="Naman Goyal" fill className="object-cover object-top" priority />
               </div>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150 fill-mode-both">
             <h2 className="text-xl md:text-2xl font-medium text-primary mb-4 tracking-wide font-outfit">
               Hi, I'm Naman Goyal 👋
             </h2>
@@ -57,30 +48,18 @@ export function Hero() {
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Senior Software Engineer specializing in Java, Spring Boot, Microservices, and architecting reliable distributed systems.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
-          >
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300 fill-mode-both flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link href="#contact" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto text-base h-12 px-8">
                 Contact Me
               </Button>
             </Link>
-
-
-          </motion.div>
+          </div>
 
           {/* Metrics section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-16 border-t border-border mt-16"
-          >
+          <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 delay-500 fill-mode-both grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-16 border-t border-border mt-16">
             {metrics.map((metric, idx) => (
               <div key={idx} className="flex flex-col items-center justify-center p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-md transition-shadow h-full min-h-[160px] gap-3">
                 <div className="p-3 rounded-full bg-primary/10">
@@ -96,7 +75,7 @@ export function Hero() {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
 
         </div>
       </div>
