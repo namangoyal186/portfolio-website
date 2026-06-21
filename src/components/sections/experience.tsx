@@ -15,7 +15,7 @@ const experiences = [
       "Deploying scalable services using Docker & Kubernetes.",
       "Supporting production monitoring and observability through Splunk and Dynatrace.",
     ],
-    skills: ["Java 8", "Spring Boot", "Kafka", "Docker", "Kubernetes", "Microservices", "Splunk", "Dynatrace", "GenAI"],
+    skills: ["Java 17", "Spring Boot", "Kafka", "Docker", "Kubernetes", "Microservices", "Splunk", "Dynatrace", "GenAI"],
   },
   {
     company: "Amdocs",

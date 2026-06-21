@@ -13,8 +13,7 @@ const NAV_LINKS = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
-
-
+  { name: "Profiles", href: "#coding-profiles" },
 ];
 
 export function Navbar() {
