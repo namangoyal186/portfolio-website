@@ -28,9 +28,9 @@ export default function RootLayout({
       <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${outfit.variable} h-full antialiased overflow-x-hidden no-scrollbar`}
+      className={`${inter.variable} ${outfit.variable} antialiased no-scrollbar`}
     >
-      <body className="min-h-full flex flex-col font-sans overflow-x-hidden no-scrollbar">
+      <body className="min-h-screen flex flex-col font-sans overflow-x-clip no-scrollbar">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

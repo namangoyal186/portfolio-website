@@ -19,7 +19,7 @@ const metrics = [
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-24 pb-24 md:pb-32 overflow-hidden">
       <BackgroundGlow />
       
 
