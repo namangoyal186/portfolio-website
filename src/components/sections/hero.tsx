@@ -34,7 +34,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150 fill-mode-both">
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both">
             <h2 className="text-xl md:text-2xl font-medium text-primary mb-4 tracking-wide font-outfit">
               Hi, I'm Naman Goyal 👋
             </h2>
@@ -50,7 +50,7 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 delay-300 fill-mode-both flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 fill-mode-both flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link href="#contact" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto text-base h-12 px-8">
                 Contact Me
@@ -59,7 +59,7 @@ export function Hero() {
           </div>
 
           {/* Metrics section */}
-          <div className="animate-in fade-in slide-in-from-bottom-8 duration-700 delay-500 fill-mode-both grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-16 border-t border-border mt-16">
+          <div className="animate-in fade-in slide-in-from-bottom-8 duration-500 fill-mode-both grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-16 border-t border-border mt-16">
             {metrics.map((metric, idx) => (
               <div key={idx} className="flex flex-col items-center justify-center p-6 rounded-xl bg-card border border-border shadow-sm hover:shadow-md transition-shadow h-full min-h-[160px] gap-3">
                 <div className="p-3 rounded-full bg-primary/10">
